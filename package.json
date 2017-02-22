@@ -1,7 +1,11 @@
 {
   "name": "ng2-starter-app",
   "version": "1.0.1",
-  "description": "",
+  "description": "A production-ready starter application.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelbits-mk/ng2-starter-app"
+  },
   "main": "index.js",
   "scripts": {
     "start": "npm run \"app\"",

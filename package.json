@@ -2,6 +2,12 @@
   "name": "ng2-starter-app",
   "version": "1.0.2",
   "description": "A production-ready starter application.",
+  "keywords": [
+    "angular2",
+    "aot",
+    "gulp",
+    "umd"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pixelbits-mk/ng2-starter-app"

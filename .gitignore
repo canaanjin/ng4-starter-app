@@ -1,0 +1,5 @@
+# exclude /src/**/*.js
+/src/**/*.js
+/src/**/*.map
+/src/**/*.ngfactory.js
+/node_modules/**/*

@@ -4,6 +4,7 @@ const exec = require('child_process').exec;
 const del = require ('del');
 const runSequence = require('run-sequence');
 const concat = require('gulp-concat');
+const inlineNg2Template = require('gulp-inline-ng2-template');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
@@ -55,6 +56,22 @@ gulp.task('compile:aot', function (cb) {
     cb(err);
   });
 });
+
+gulp.task('compile:es6', function () {
+  return gulp.src(['./src/**/*.ts'])
+    .pipe(inlineNg2Template({ base: '/src' }))
+    .pipe(tsc({
+      "target": "es5",
+      "module": "es6",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "lib": ["es6", "dom"]
+    }))
+    .pipe(gulp.dest('./dist/src'));
+});
+
+
 
 
 
@@ -142,7 +159,7 @@ gulp.task('rollup:module', function() {
 
 
 gulp.task('bundle:app', function (cb) {
-    runSequence('compile:aot', 'copy:html', 'rollup:app', cb);
+    runSequence('compile:aot', 'compile:es6', 'copy:html', 'rollup:app', cb);
 });
 
 gulp.task('bundle:vendor', function() {
@@ -170,7 +187,7 @@ gulp.task('bundle:all',['bundle:app','bundle:vendor'], function(cb) {
 });
 
 gulp.task('bundle:module', function(cb){
-  runSequence('compile:aot', 'copy:html',  'rollup:module', cb);
+  runSequence('compile:aot', 'compile:es6',  'copy:html',  'rollup:module', cb);
 });
 
 gulp.task('compress', function (cb) {

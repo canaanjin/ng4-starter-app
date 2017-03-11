@@ -59,7 +59,7 @@ gulp.task('compile:aot', function (cb) {
 
 gulp.task('compile:es6', function () {
   return gulp.src(['./src/**/*.ts'])
-    .pipe(inlineNg2Template({ base: '/src' }))
+    .pipe(inlineNg2Template({ base: '/src', useRelativePaths:true }))
     .pipe(tsc({
       "target": "es5",
       "module": "es6",

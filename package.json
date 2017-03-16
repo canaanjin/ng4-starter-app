@@ -1,6 +1,6 @@
 {
   "name": "ng2-starter-app",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A production-ready starter application.",
   "keywords": [
     "angular2",
@@ -39,7 +39,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "5.2.0",
-    "zone.js": "0.8.0"
+    "zone.js": "0.7.2"
   },
   "devDependencies": {
     "gulp-typescript": "^3.1.4",

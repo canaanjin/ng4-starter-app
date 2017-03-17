@@ -1,1 +1,3 @@
-**/*.ngFactory.ts
+/**/*.ngFactory.ts
+/**/*.ngFactory.d.ts
+/**/*.ngFactory.js

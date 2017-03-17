@@ -2,4 +2,8 @@
 /src/**/*.js
 /src/**/*.map
 /src/**/*.ngfactory.js
+/src/**/*.ngfactory.ts
+/src/**/*.ngsummary.json
+/src/**/*.d.ts
 /node_modules/**/*
+/dist/**/*

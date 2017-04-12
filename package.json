@@ -1,9 +1,9 @@
 {
-  "name": "ng2-starter-app",
-  "version": "1.0.12",
+  "name": "ng4-starter-app",
+  "version": "1.0.0",
   "description": "A production-ready starter application.",
   "keywords": [
-    "angular2",
+    "angular4",
     "aot",
     "gulp",
     "umd"
@@ -11,8 +11,7 @@
   "readme": "readme.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixelbits-mk/ng2-starter-app"
-  },
+    "url": "https://github.com/ng-component/ng4-starter-app.git"  },
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
   "scripts": {
@@ -27,22 +26,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "2.4.9",
-    "@angular/compiler": "2.4.9",
-    "@angular/compiler-cli": "2.4.9",
-    "@angular/core": "2.4.9",
-    "@angular/forms": "2.4.9",
-    "@angular/http": "2.4.9",
-    "@angular/platform-browser": "2.4.9",
-    "@angular/platform-browser-dynamic": "2.4.9",
-    "@angular/platform-server": "2.4.9",
-    "@types/node": "^7.0.5",
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/compiler-cli": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/animations": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/platform-server": "~4.0.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "rxjs": "5.2.0",
-    "zone.js": "0.7.2"
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@types/node": "^7.0.5",
     "gulp-typescript": "^3.1.4",
     "systemjs": "0.20.9",
     "typescript": "2.2.1",

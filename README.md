@@ -1,6 +1,7 @@
-# ng2-starter-app
+# ng4-starter-app
+forked from [pixelbits-mk/ng2-starter-app](https://github.com/pixelbits-mk/ng2-starter-app)
 
-An easy way to get started with an Angular2 application.
+An easy way to get started with an Angular4 application.
 
 Demonstrates
 * Simple Hello World! Application that can be easily customized
@@ -12,7 +13,7 @@ Demonstrates
 ## Installation
 Install the starter application from npm: 
 
-`npm install ng2-starter-app`
+`npm install ng4-starter-app`
 
 ## Usage
 You can build the application in three modes: 
